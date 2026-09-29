@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Digital Familiar Backups, a personal encrypted backup integration for Google Drive.">
+  <title>Digital Familiar Backups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="brand" href="index.html">Digital Familiar Backups</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+  <main id="main">
+    <p class="eyebrow">Personal backup integration</p>
+    <h1>A recoverable copy of a personal Digital Familiar.</h1>
+    <p class="lead">Digital Familiar Backups is an owner-operated application that encrypts a local backup and stores the encrypted file in the owner's Google Drive account.</p>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">What the application does</h2>
+      <p>Digital Familiar is a personal record and assistant system. Its backup integration protects a snapshot of the installation's stored records, application configuration, and recovery files.</p>
+      <ol>
+        <li>A local backup is prepared on the owner's computer.</li>
+        <li>The backup is encrypted on that computer using the owner's recovery-key recipient.</li>
+        <li>The encrypted file is uploaded to the owner's Google Drive. A downloaded copy is checked against the original encrypted file before the upload is reported as verified.</li>
+      </ol>
+      <p>The owner can separately run a recovery rehearsal with their saved private recovery key. A successful upload and a successful recovery rehearsal are separate checks.</p>
+    </section>
+
+    <section aria-labelledby="access">
+      <h2 id="access">Google Drive access</h2>
+      <p>The integration uses Google authorization with the <code>drive.file</code> permission. This allows access to files created by, or specifically made available to, the application. It uses that access to create backup folders, upload encrypted archives, and read those archives for verification and recovery.</p>
+      <p>The application is for the operator's personal installation. The owner authorizes their own Google account during local setup. This information site has no sign-in form or backup upload feature.</p>
+    </section>
+
+    <section aria-labelledby="control">
+      <h2 id="control">Owner control</h2>
+      <p>The owner chooses the destination account, keeps the recovery key separately, controls how long backups are retained, and can stop uploads or revoke Google access. The <a href="privacy.html">privacy policy</a> explains the data handled by this integration. The <a href="terms.html">terms of use</a> describe its personal-use scope.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>For questions about this installation, use the user support email listed in its Google authorization screen. The Google Cloud project owner maintains that address and this application.</p>
+    </section>
+  </main>
+  <footer>Digital Familiar Backups · Information updated 27 September 2026</footer>
+</body>
+</html>
